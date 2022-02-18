@@ -6,11 +6,11 @@ package part1
  */
 fun solution(a: Int): Char {
     when (a) {
-        in 10..99 -> 'A'
-        in 100..999 -> 'B'
-        else -> return 'C'
+        in 10..99   -> return 'A'
+        in 100..999 -> return 'B'
+        else        -> return 'C'
     }
-
+}
 
     fun main() {
         println(solution(5))     // C
@@ -19,8 +19,7 @@ fun solution(a: Int): Char {
         println(solution(235))   // B
         println(solution(1736))  // C
 
-        val a = readLine()!!.toInt()
-        println(solution(a))
+
     }
 
 
